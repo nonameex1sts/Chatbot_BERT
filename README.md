@@ -4,7 +4,7 @@
 
 Change the path of *intends.json* in **train.py** and **chat.py** according to your local computer
 
-## Execution
+## Execution in terminal
 
 Train the model:
 ```sh
