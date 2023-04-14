@@ -6,7 +6,7 @@ Change the path of *intends.json* in **train.py** and **chat.py** according to y
 
 ## Execution in terminal
 
-Train the model:
+Train the model to create **data.pth**:
 ```sh
 python train.py
 ```
