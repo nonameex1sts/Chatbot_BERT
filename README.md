@@ -2,7 +2,7 @@
 
 ## Changing file path
 
-Change the path of **intends.json** in **train.py** and **chat.py** according to your local computer
+Change the path of *intends.json* in **train.py** and **chat.py** according to your local computer
 
 ## Execution
 
