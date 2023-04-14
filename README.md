@@ -1,5 +1,5 @@
 # Chatbot
 
-Run in terminal:__
-python train.py__
+Run in terminal: <br />
+python train.py <br />
 python app.py
