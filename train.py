@@ -11,36 +11,36 @@ from model import NeuralNet
 with open('intentsManh.json', 'r') as f:
     intents = json.load(f)
 
-all_words = []
+all_sentences = []
 tags = []
 xy = []
+
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
     tag = intent['tag']
     # add to tag list
     tags.append(tag)
     for pattern in intent['patterns']:
-        # add to our words list
-        all_words.append(pattern)
+        # add to our sentence list
+        all_sentences.append(pattern)
         # add to xy pair
         xy.append((pattern, tag))
 
-all_words = preprocess(all_words)
-
 # print(len(xy), "patterns")
 # print(len(tags), "tags:", tags)
-# print(len(all_words), "unique stemmed words:", all_words)
+# print(len(all_sentences))
 
 # create training data
-X_train = word_piece(all_words)
-y_train = []
+all_sentences = preprocess(all_sentences)
+X_train = word_piece(all_sentences)
+Y_train = []
 for (pattern_sentence, tag) in xy:
-    # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
+    # y: PyTorch CrossEntropyLoss needs only class labels
     label = tags.index(tag)
-    y_train.append(label)
+    Y_train.append(label)
 
 X_train = np.array(X_train)
-y_train = np.array(y_train)
+Y_train = np.array(Y_train)
 
 # print(X_train)
 
@@ -51,7 +51,7 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 64
 output_size = len(tags)
-print(input_size, output_size)
+print(f"Input size: {input_size} \n Output size: {output_size}")
 
 
 class ChatDataset(Dataset):
@@ -59,7 +59,7 @@ class ChatDataset(Dataset):
     def __init__(self):
         self.n_samples = len(X_train)
         self.x_data = X_train
-        self.y_data = y_train
+        self.y_data = Y_train
 
     # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, index):
@@ -111,7 +111,7 @@ data = {
     "input_size": input_size,
     "hidden_size": hidden_size,
     "output_size": output_size,
-    "all_words": all_words,
+    "all_sentences": all_sentences,
     "tags": tags
 }
 
