@@ -8,7 +8,7 @@ from torch.utils.data import Dataset, DataLoader
 from bert import preprocess, word_piece
 from model import NeuralNet
 
-with open('intentsManh.json', 'r') as f:
+with open('intents2.json', 'r') as f:
     intents = json.load(f)
 
 all_sentences = []
@@ -45,12 +45,12 @@ Y_train = np.array(Y_train)
 # print(X_train)
 
 # Hyper-parameters
-num_epochs = 1500
-batch_size = 128
+num_epochs = 1000
+batch_size = 64
 learning_rate = 0.001
-input_size = len(X_train[0])
+input_size = len(X_train[0])    # Length of the attribute vector - 768
 hidden_size = 64
-output_size = len(tags)
+output_size = len(tags)         # Number of tags
 print(f"Input size: {input_size} \n Output size: {output_size}")
 
 
@@ -80,9 +80,10 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
-# Loss and optimizer
+# Loss, optimizer and scheduler
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.999999)
 
 # Train the model
 for epoch in range(num_epochs):
@@ -100,6 +101,8 @@ for epoch in range(num_epochs):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+
+    scheduler.step()
 
     if (epoch + 1) % 100 == 0:
         print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')

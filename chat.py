@@ -9,7 +9,7 @@ from bert import preprocess, word_piece
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intentsManh.json', 'r') as json_data:
+with open('intents2.json', 'r') as json_data:
     intents = json.load(json_data)
 
 FILE = "data.pth"
@@ -42,7 +42,7 @@ def get_response(msg):
     tag = tags[predicted.item()]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.5:
+    if prob.item() > 0.2:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
