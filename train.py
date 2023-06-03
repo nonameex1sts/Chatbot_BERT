@@ -8,7 +8,7 @@ from torch.utils.data import Dataset, DataLoader
 from bert import preprocess, word_piece
 from model import NeuralNet
 
-with open('intents2.json', 'r') as f:
+with open('training.json', 'r') as f:
     intents = json.load(f)
 
 all_sentences = []
@@ -45,13 +45,13 @@ Y_train = np.array(Y_train)
 # print(X_train)
 
 # Hyper-parameters
-num_epochs = 1000
-batch_size = 64
+num_epochs = 200
+batch_size = 16
 learning_rate = 0.001
 input_size = len(X_train[0])    # Length of the attribute vector - 768
-hidden_size = 64
+hidden_size = 512
 output_size = len(tags)         # Number of tags
-print(f"Input size: {input_size} \n Output size: {output_size}")
+print(f"Input size: {input_size} \nOutput size: {output_size}")
 
 
 class ChatDataset(Dataset):
@@ -83,7 +83,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 # Loss, optimizer and scheduler
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.999999)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=40, gamma=0.5)
 
 # Train the model
 for epoch in range(num_epochs):
@@ -93,8 +93,6 @@ for epoch in range(num_epochs):
 
         # Forward pass
         outputs = model(words)
-        # if y would be one-hot, we must apply
-        # labels = torch.max(labels, 1)[1]
         loss = criterion(outputs, labels)
 
         # Backward and optimize
@@ -104,7 +102,7 @@ for epoch in range(num_epochs):
 
     scheduler.step()
 
-    if (epoch + 1) % 100 == 0:
+    if (epoch + 1) % 10 == 0:
         print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 print(f'final loss: {loss.item():.4f}')
@@ -118,7 +116,7 @@ data = {
     "tags": tags
 }
 
-FILE = "data.pth"
+FILE = "neural_net.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')

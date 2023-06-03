@@ -19,29 +19,29 @@ Download one of the BERT pretrained models (L: Number of layers, H: Size of the 
 
 
 [2_128]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-128_A-2/2
-[2_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-256_A-2/2
-[2_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-512_A-2/2
-[2_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-768_A-2/2
+[2_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-256_A-4/2
+[2_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-512_A-8/2
+[2_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-768_A-12/2
 [4_128]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-128_A-2/2
-[4_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-256_A-2/2
-[4_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-512_A-2/2
-[4_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-768_A-2/2
+[4_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-256_A-4/2
+[4_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-512_A-8/2
+[4_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-4_H-768_A-12/2
 [6_128]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-128_A-2/2
-[6_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-256_A-2/2
-[6_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-512_A-2/2
-[6_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-768_A-2/2
+[6_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-256_A-4/2
+[6_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-512_A-8/2
+[6_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-6_H-768_A-12/2
 [8_128]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-128_A-2/2
-[8_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-256_A-2/2
-[8_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-512_A-2/2
-[8_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-768_A-2/2
+[8_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-256_A-4/2
+[8_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-512_A-8/2
+[8_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-8_H-768_A-12/2
 [10_128]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-128_A-2/2
-[10_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-256_A-2/2
-[10_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-512_A-2/2
-[10_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-768_A-2/2
+[10_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-256_A-4/2
+[10_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-512_A-8/2
+[10_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-10_H-768_A-12/2
 [12_128]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-128_A-2/2
-[12_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-256_A-2/2
-[12_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-512_A-2/2
-[12_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-768_A-2/2
+[12_256]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-256_A-4/2
+[12_512]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-512_A-8/2
+[12_768]: https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-12_H-768_A-12/2
 
 *Note: You can use the URL of the model without having to download, but downloading is recommended for reducing training time.*
 
@@ -56,15 +56,15 @@ Hyper-parameters of the neural network and training process can be changed in **
 
 ```sh
 # Hyper-parameters
-num_epochs = 1500
-batch_size = 128
+num_epochs = 200
+batch_size = 16
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 64
+hidden_size = 512
 output_size = len(tags)
 ```
 
-After importing necessary modules in **requirements.txt** and running **train.py**, the neural network is stored in **data.pth**.
+After importing necessary modules in **requirements.txt** and running **train.py**, the neural network is stored in **neural_net.pth**.
 
 ```sh
 python .\train.py
@@ -75,4 +75,11 @@ python .\train.py
 Run the chatbot app by executing **app.py**:
 ```sh
 python .\app.py
+```
+
+## Testing the chatbot
+
+Run the chatbot app by executing **test.py**:
+```sh
+python .\test.py
 ```

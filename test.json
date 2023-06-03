@@ -1,0 +1,136 @@
+{
+    "intents": [
+        {
+            "tag": "anime_trivia",
+            "patterns": [
+                "Can you share a piece of trivia about a popular anime series?",
+                "Are there any behind-the-scenes facts about anime production that you can share?",
+                "What are some interesting historical facts related to the anime industry?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "top_anime",
+            "patterns": [
+                "What are some of the highest-rated anime of all time?",
+                "I want to get into anime. What are the best ones to start with?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "action_anime",
+            "patterns": [
+                "What action anime are currently trending?",
+                "Can you recommend any action anime for me?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "romance_anime",
+            "patterns": [
+                "Can you suggest some romance anime?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "comedy_anime",
+            "patterns": [
+                "Can you recommend a comedy anime that's funny?",
+                "What are some comedy anime with a good English dub?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "best moments in anime games",
+            "patterns": [ 
+                "What are the most memorable moments in anime games?",
+                "Can you recommend some great battles in anime games?"
+            ],
+            "responses": []
+        }, 
+        {
+            "tag": "music_anime",
+            "patterns": [
+                "What anime has the best music?",
+                "Are there any music anime with a romantic storyline?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "light_novel_illustrators",
+            "patterns": [
+                "Can you tell me about some popular light novel illustrators?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "light_novel_authors",
+            "patterns": [
+                "Can you suggest some talented light novel authors?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "light_novels",
+            "patterns": [
+              "I want to read a light novel with a mystery theme. Any recommendations?",
+              "What are some of the best light novels?"
+            
+            ],
+            "responses": []
+        },
+        {
+            "tag": "slice_of_life",
+            "patterns": [
+              "Can you suggest some heartwarming Slice of Life light novels?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "anime_composers",
+            "patterns": [
+              "Can you recommend some great anime music composers?",
+              "Who are some popular anime music composers?",
+              "I love anime music! Who are the best composers?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "anime_bands",
+            "patterns": [
+              "I'm looking for some new anime music. Any suggestions for bands to check out?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "anime_singers",
+            "patterns": [
+              "Which anime singers do you think have the best vocal range?",
+              "Who are some talented Japanese singers that perform anime songs?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "anime_producer",
+            "patterns": [
+              "I'm looking for anime that have great storytelling. Can you recommend me some production companies that focus on that?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "manga",
+            "patterns": [
+                "What are some good manga for a newcomer?",
+                "Can you recommend any manga with a unique art style?"
+            ],
+            "responses": []
+        },
+        {
+            "tag": "anime_movie",
+            "patterns": [
+              "Can you recommend a great anime movie?",
+              "What are some anime movies with stunning animation and visuals?"
+            ],
+            "responses": []
+        }
+    ]}
