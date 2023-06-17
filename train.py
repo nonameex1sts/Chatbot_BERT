@@ -45,7 +45,7 @@ Y_train = np.array(Y_train)
 # print(X_train)
 
 # Hyper-parameters
-num_epochs = 200
+num_epochs = 210
 batch_size = 16
 learning_rate = 0.001
 input_size = len(X_train[0])    # Length of the attribute vector - 768
