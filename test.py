@@ -1,5 +1,4 @@
 import json
-# Chat ~ NeuralNetwork, chat2 ~ RandomForest
 from chat import classify
 
 with open('test.json', 'r') as json_data:
