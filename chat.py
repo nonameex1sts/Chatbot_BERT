@@ -42,7 +42,7 @@ def classify(msg):
     tag = tags[predicted.item()]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.1:
+    if prob.item() > 0.99999:
         return tag
 
     return "None"
