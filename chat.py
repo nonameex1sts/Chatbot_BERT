@@ -26,7 +26,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Chatbot"
+bot_name = "Chatbot (neural_network)"
 
 
 def classify(msg):
@@ -42,7 +42,7 @@ def classify(msg):
     tag = tags[predicted.item()]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.99999:
+    if prob.item() > 0.9:
         return tag
 
     return "None"
