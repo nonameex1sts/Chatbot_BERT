@@ -43,7 +43,7 @@ X_train = np.array(X_train)
 Y_train = np.array(Y_train)
 
 # k neighbors classification
-neigh = KNeighborsClassifier(n_neighbors=7, weights='uniform', algorithm='auto', metric='cosine')
+neigh = KNeighborsClassifier(n_neighbors=1, weights='uniform', algorithm='auto', metric='cosine')
 neigh.fit(X_train, Y_train)
 
 
@@ -56,9 +56,9 @@ def classify(msg):
 
     # classify message
     lable = neigh.predict(X)
-    print(tags[lable[0]])
+    # print(tags[lable[0]])
     proba = np.max(neigh.predict_proba(X))
-    print(proba)
+    # print(proba)
 
     if proba > 0:
         return tags[lable[0]]

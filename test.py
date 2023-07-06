@@ -1,5 +1,5 @@
 import json
-from chat import classify
+from chat_nn import classify
 
 with open('test.json', 'r') as json_data:
     intents = json.load(json_data)
