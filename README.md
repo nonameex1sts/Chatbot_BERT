@@ -1,8 +1,6 @@
 # Chatbot
 
-## Method 1: Neural network
-
-### Training the neural network
+## Installing BERT
 
 Download the pretrained BERT preprocess model [here][preprocess].
 
@@ -53,6 +51,10 @@ Replace the URLs in **bert.py** by online URLs or according to the location of y
 preprocess_url = "C:/Users/ADMIN/Downloads/bert_en_uncased_preprocess_3"
 encoder_url = "C:/Users/ADMIN/Downloads/small_bert_bert_en_uncased_L-6_H-768_A-12_2"
 ```
+
+## Method 1: Neural network
+
+### Training the chatbot
 
 Hyper-parameters of the neural network and training process can be changed in **train.py**:
 
