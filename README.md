@@ -1,6 +1,8 @@
 # Chatbot
 
-## Training the neural network
+## Method 1: Neural network
+
+### Training the neural network
 
 Download the pretrained BERT preprocess model [here][preprocess].
 
@@ -70,7 +72,26 @@ After importing necessary modules in **requirements.txt** and running **train.py
 python .\train.py
 ```
 
-## Running the chatbot
+### Running the chatbot
+
+Change the package import in **app.py** to neural network:
+```sh
+from chat_nn import get_response, bot_name
+```
+
+Run the chatbot app by executing **app.py**:
+```sh
+python .\app.py
+```
+
+## Method 2: K - nearest neighbors
+
+### Running the chatbot
+
+Change the package import in **app.py** to k - nearest neighbors:
+```sh
+from chat_knn import get_response, bot_name
+```
 
 Run the chatbot app by executing **app.py**:
 ```sh

@@ -7,6 +7,8 @@ from sklearn.neighbors import KNeighborsClassifier
 
 from bert import preprocess, word_piece
 
+# Number of neighbors
+k = 1
 bot_name = "Chatbot (k-nn)"
 
 with open('training.json', 'r') as f:
@@ -43,7 +45,7 @@ X_train = np.array(X_train)
 Y_train = np.array(Y_train)
 
 # k neighbors classification
-neigh = KNeighborsClassifier(n_neighbors=1, weights='uniform', algorithm='auto', metric='cosine')
+neigh = KNeighborsClassifier(n_neighbors=k, weights='uniform', algorithm='auto', metric='cosine')
 neigh.fit(X_train, Y_train)
 
 
@@ -57,10 +59,10 @@ def classify(msg):
     # classify message
     lable = neigh.predict(X)
     # print(tags[lable[0]])
-    proba = np.max(neigh.predict_proba(X))
-    # print(proba)
+    distance = np.average(neigh.kneighbors(X, n_neighbors=k)[0][0])
+    print(distance)
 
-    if proba > 0:
+    if distance < 1:
         return tags[lable[0]]
 
     return "None"

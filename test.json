@@ -4,8 +4,7 @@
             "tag": "anime_trivia",
             "patterns": [
                 "Can you share a piece of trivia about a popular anime series?",
-                "Are there any behind-the-scenes facts about anime production that you can share?",
-                "What are some interesting historical facts related to the anime industry?"
+                "Are there any behind-the-scenes facts about anime production that you can share?"
             ],
             "responses": []
         },
@@ -56,6 +55,15 @@
             ],
             "responses": []
         },
+            {
+          "tag": "fantasy",
+          "patterns": [
+            "Suggest some best fantasy light novels ever.",
+            "I want to read fantasy light novels.",
+            "List some top fantasy light novels."
+          ],
+          "responses": []
+        },
         {
             "tag": "light_novel_illustrators",
             "patterns": [
@@ -79,10 +87,20 @@
             ],
             "responses": []
         },
+            {
+              "tag": "manga_author",
+              "patterns": [
+                "I'm looking for a great manga creator",
+                "Any recommendations for manga artists?",
+                "Who are your favorite manga authors?"
+              ],
+              "responses": []
+            },
         {
             "tag": "slice_of_life",
             "patterns": [
-              "Can you suggest some heartwarming Slice of Life light novels?"
+                "What are some good Slice of Life light novels?",
+                "Can you suggest some heartwarming Slice of Life light novels?"
             ],
             "responses": []
         },
@@ -98,7 +116,9 @@
         {
             "tag": "anime_bands",
             "patterns": [
-              "I'm looking for some new anime music. Any suggestions for bands to check out?"
+                "I'm looking for some new anime music. Any suggestions for bands to check out?",
+                "Do you know any cool anime bands?",
+                "What are some popular anime bands?"
             ],
             "responses": []
         },
@@ -113,15 +133,16 @@
         {
             "tag": "anime_producer",
             "patterns": [
-              "I'm looking for anime that have great storytelling. Can you recommend me some production companies that focus on that?"
+                "What are some anime studios known for producing action-packed anime?",
+                "What are some of the most popular anime studios right now?",
+                "I'm looking for anime that have great storytelling. Can you recommend me some production companies that focus on that?"
             ],
             "responses": []
         },
         {
             "tag": "manga",
             "patterns": [
-                "What are some good manga for a newcomer?",
-                "Can you recommend any manga with a unique art style?"
+                "What are some good manga for a newcomer?"
             ],
             "responses": []
         },
