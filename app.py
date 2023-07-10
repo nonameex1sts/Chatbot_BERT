@@ -1,5 +1,5 @@
 from tkinter import *
-from chat_nn import get_response, bot_name
+from chat_knn import get_response, bot_name
 
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#5b5b5b"

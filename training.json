@@ -1,738 +1,783 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day",
-        "Greetings"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "what_is_anime",
-      "patterns": [
-        "What is anime?",
-        "Can you explain what anime is?",
-        "I'm not familiar with anime, can you give me a brief explanation?",
-        "What makes anime different from other types of animation?",
-        "I've heard the term 'anime' before, but I'm not exactly sure what it means. Can you help clarify?",
-        "I'm curious about anime, can you give me a basic understanding of it?",
-        "Can you shed some light on the concept of anime?"
-      ],
-      "responses": [
-        "Anime refers to animated productions originating from Japan. It can cover a wide range of genres and styles, including action, romance, comedy, drama, and more. Anime has gained a worldwide following and is known for its unique visual style, storytelling, and diverse themes. It has become a significant part of Japanese popular culture and has had a significant influence on Western media.",
-        "Anime is a form of animation that originated in Japan. It features unique visual styles and often covers a wide range of genres and themes. It has gained a devoted following worldwide and has influenced Western media in significant ways. Whether you're a long-time fan or new to the medium, there's always something new and exciting to discover in the world of anime.",
-        "At its most basic, anime is a style of animated productions that originated in Japan. It covers a wide range of genres and themes and has become a significant part of Japanese popular culture. With its unique visual style and storytelling, anime has gained a devoted following worldwide. Whether you're looking for action-packed adventures, heartfelt romance, or anything in between, there's an anime out there for you to enjoy."
-      ]
-    },
-    {
-      "tag": "popular_anime",
-      "patterns": [
-        "What are some popular anime?",
-        "Can you recommend some popular anime?",
-        "What are some must-watch anime series?",
-        "I'm interested in popular animes.",
-        "Can you suggest some anime that are popular with teenagers?",
-        "Are there any must-see anime series you can suggest?",
-        "List some famous animes.",
-        "Tell me about popular animes.",
-        "Suggest some must watch animes."
-      ],
-      "responses": [
-        "There are so many popular anime! Some current popular ones include Jujutsu Kaisen, Attack on Titan, and Demon Slayer",
-        "If you're looking for something popular, you might enjoy My Hero Academia, Haikyuu!!, or One Piece",
-        "Sure thing! Check out Black Clover, Naruto, or Sword Art Online for some popular anime",
-	    "You should definitely watch animes like Naruto, Death Note, Fullmetal Alchemist: Brotherhood, and Demon Slayer."
-      ]
-    },
-    {
-      "tag": "anime_trivia",
-      "patterns": [
-        "Tell me a fun fact about anime",
-        "What's something interesting about anime?",
-        "Can you share some anime trivia?",
-        "Do you know any surprising facts about anime?",
-        "What's a lesser-known fact about anime that you find interesting?",
-        "Can you share a fun fact about anime?",
-        "What's a surprising fact about anime that you know?",
-        "I want to know some unknown facts about anime",
-        "I want to know more about anime",
-        "What's something surprising about anime?"
-      ],
-      "responses": [
-        "Did you know that the first anime was produced in 1917?",
-        "In Japan, anime is not just for kids. Many adults also enjoy watching anime.",
-        "Anime is often adapted from manga, which are Japanese comic books. However, there are also many original anime series that are not based on manga.",
-        "Did you know that Spirited Away is the only non-English animated film to win an Academy Award for Best Animated Feature?",
-        "One interesting fact is that many anime are based on manga, but not all. Some are completely original or adapted from light novels or video games.",
-        "Did you know that 'anime' is actually a shortened form of the word 'animation' in Japanese?",
-        "A surprising fact is that the longest-running anime, 'Sazae-san', has over 7,500 episodes."
-      ]
-    },
-    {
-      "tag": "anime_streaming",
-      "patterns": [
-        "Where can I watch anime online?",
-        "What are some good anime streaming sites?",
-        "Is there a website for streaming anime?",
-        "What are some reliable websites to watch anime online?",
-        "Can you recommend some good anime streaming platforms?",
-        "Where can I find legal anime streaming sites?",
-        "What are some popular online platforms to watch anime?",
-        "Can you suggest reliable websites for streaming anime?",
-        "What are some recommended anime streaming platforms?"
-      ],
-      "responses": [
-        "Some popular anime streaming sites include Crunchyroll, Funimation, Netflix, Hulu, and Amazon Prime Video.",
-        "There are many websites where you can watch anime online, but make sure to choose a legal and safe streaming site to avoid any malware or other security risks.",
-        "You can find many anime series and movies on various streaming platforms, such as Netflix, Hulu, Crunchyroll, Funimation, and Amazon Prime Video. Some of these platforms offer free trials or limited-time offers."
-      ]
-    },
-    {
-       "tag": "anime_convention",
-       "patterns": [
-    	"What are some anime conventions?",
-    	"Can you suggest some anime conventions?",
-    	"I want to attend anime conventions.",
-    	"List some top anime conventions.",
-    	"Tell me about anime conventions.",
-    	"I'm interested in anime conventions.",
-    	"Which are the best anime conventions?",
-    	"Can you list the top anime conventions?",
-    	"What's the biggest anime convention?",
-    	"Suggest some must-attend anime conventions."
-  	],
-       "responses": [
-    	"Sure, some of the biggest anime conventions are Anime Expo in Los Angeles, Otakon in Washington D.C., and Anime Japan in Tokyo.",
-    	"You might enjoy attending anime conventions like Comic Market (Comiket) in Tokyo, Japan Expo in Paris, and Anime Central in Rosemont, Illinois.",
-    	"Some of the top-rated anime conventions are Anime North in Toronto, Sakura-Con in Seattle, and A-Kon in Fort Worth, Texas.",
-    	"You should definitely consider attending anime conventions like Anime Midwest in Chicago, Anime Boston in Boston, and MomoCon in Atlanta."
-  	]
-      },
-    {
-      "tag": "anime_genres",
-      "patterns": [
-        "What are some popular anime genres?",
-        "Can you list some anime genres?",
-        "What type of anime do you suggest?",
-        "Which anime genre is the best?",
-        "Show me some different genres of anime.",
-        "What anime genres do you enjoy?",
-        "Can you suggest some specific genres?",
-        "What are the main anime genres?",
-        "I want to know about anime genres",
-        "Tell me about different anime genres"
-      ],
-      "responses": [
-        "Some popular anime genres include action, adventure, romance, comedy, drama, and fantasy.",
-        "Sure, here are some anime genres: action, adventure, romance, comedy, drama, horror, science fiction, fantasy, and mecha.",
-        "Anime comes in various genres. Some of the main ones include action, adventure, comedy, drama, fantasy, horror, mecha, romance, and slice of life."
-      ]
-    },
-    {
-      "tag": "top_anime",
-      "patterns": [
-        "What are the top anime?",
-        "Can you recommend some good anime?",
-        "Which anime should I watch?",
-        "I'm looking for a great anime to watch",
-        "Can you suggest some anime that are critically acclaimed?",
-        "Can you recommend some top-rated anime?",
-        "What are some highly acclaimed anime series?",
-        "Which anime are considered must-watch?",
-        "I'm in search of a highly recommended anime."
-
-      ],
-      "responses": [
-        "Some of the top anime are: Attack on Titan, Fullmetal Alchemist: Brotherhood, Naruto, Death Note, Cowboy Bebop, One Punch Man, Dragon Ball Z, My Hero Academia, Neon Genesis Evangelion, and Sword Art Online.",
-        "If you're looking for great anime, you should definitely check out Attack on Titan, Fullmetal Alchemist: Brotherhood, Naruto, Death Note, Cowboy Bebop, One Punch Man, Dragon Ball Z, My Hero Academia, Neon Genesis Evangelion, or Sword Art Online.",
-        "There are so many great anime out there, but some of the top ones are Attack on Titan, Fullmetal Alchemist: Brotherhood, Naruto, Death Note, Cowboy Bebop, One Punch Man, Dragon Ball Z, My Hero Academia, Neon Genesis Evangelion, and Sword Art Online."
-      ]
-    },
-    {
-      "tag": "action_anime",
-      "patterns": [
-        "I love action anime",
-        "What are some good action anime?",
-        "Can you recommend some good action anime?",
-        "Can you recommend any action anime with a great storyline?",
-        "I want to watch an action anime with strong female characters. Any suggestions?",
-        "I'm a fan of action-packed anime. Can you suggest some good titles?",
-        "Do you have any recommendations for action anime series?",
-        "I'm in the mood for an action anime with an engaging storyline. Any suggestions?",
-        "Suggest some best action animes ever.",
-	    "List some top action animes."
-      ],
-      "responses": [
-        "Great choice! Some good action anime are Attack on Titan, Naruto, and Fullmetal Alchemist",
-        "If you love action anime, you might enjoy Sword Art Online, My Hero Academia, or One Piece",
-        "Sure thing! Check out Demon Slayer, Hunter x Hunter, or Black Clover for some great action anime"
-      ]
-    },
-    {
-      "tag": "romance_anime",
-      "patterns": [
-        "Can you recommend some good romance animes?",
-        "What are some good romance anime?",
-        "Any good romance anime suggestions?",
-        "I'm in the mood for a heartwarming romance anime. Any recommendations?",
-        "Can you suggest some good romance anime series?",
-        "I'm looking for a sweet and romantic anime to watch. Any suggestions?",
-        "Do you have any recommendations for romance anime with a captivating story?",
-        "Suggest some best romance animes ever.",
-        "I want to watch romance animes.",
-    	"List some top romance animes."
-      ],
-      "responses": [
-        "Definitely! Some great romance anime are Your Lie in April, Clannad, and Toradora!",
-        "If you're in the mood for romance, you might enjoy Fruits Basket, Love, Chunibyo & Other Delusions, or Golden Time",
-        "Sure thing! Check out Kaguya-sama: Love is War, Say \"I Love You\", or Ouran High School Host Club for some great romance anime"
-      ]
-    },
-    {
-      "tag": "comedy_anime",
-      "patterns": [
-    	"What are some good comedy animes?",
-        "Can you suggest some comedy animes?",
-        "I want to watch comedy animes.",
-        "List some top comedy animes.",
-        "Tell me about comedy animes.",
-    	"I'm interested in comedy animes.",
-    	"Which are the best comedy animes?",
-    	"Can you list the top comedy animes?",
-        "What's the best comedy anime of all time?",
-    	"Suggest some best comedy animes ever."
-  	],
-      "responses": [
-    	"Sure, some top comedy animes are One Punch Man, Gintama, Konosuba, and The Disastrous Life of Saiki K.",
-   	    "You might enjoy watching comedy animes like Nichijou, Daily Lives of High School Boys, Mob Psycho 100, and Kaguya-sama: Love is War.",
-    	"Some of the top-rated comedy animes are Ouran High School Host Club, Miss Kobayashi's Dragon Maid, Great Teacher Onizuka, and Hinamatsuri.",
-    	"You should definitely watch comedy animes like Haven't You Heard? I'm Sakamoto, The Devil is a Part-Timer!, Pop Team Epic, and Space Dandy."
-  	]
-      },
-
-    {
-      "tag": "define_of_yuri_anime",
-      "patterns": [
-    	"What is yuri anime?",
-    	"Define yuri anime",
-    	"I want to know about yuri anime",
-    	"Tell me about yuri anime",
-    	"What does yuri mean in anime?",
-    	"Can you explain what yuri anime is?",
-    	"What type of anime is yuri?",
-    	"I'm interested in yuri anime",
-    	"What's yuri anime?",
-    	"Explain yuri anime"
-  	],
-       "responses": [
-    	"Yuri anime refers to a genre of anime that involves love and romantic relationships between female characters. It's sometimes also known as 'Girls' Love' or 'GL'.",
-    	"Yuri is a genre of anime that focuses on the romantic relationships between women. It can range from the subtle to the explicit, and from the sweet to the dramatic.",
-    	"In the context of anime, 'yuri' refers to a genre that focuses on the romantic and sexual relationships between female characters. The term comes from the Japanese word for 'lily', and it's often used to contrast with 'yaoi', which involves relationships between male characters.",
-    	"Yuri anime is a genre that centers on romantic relationships between female characters. The term 'yuri' translates to 'lily' in English, symbolizing innocence, purity, and beauty, which can be themes in these types of animes."
-  	]
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "Greetings"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
       },
       {
-      "tag": "yuri_anime",
-      "patterns": [
-    	"What are some good yuri animes?",
-    	"Can you suggest some yuri animes?",
-    	"I want to watch yuri animes.",
-    	"List some top yuri animes.",
-    	"Tell me about yuri animes.",
-    	"I'm interested in yuri animes.",
-    	"Which are the best yuri animes?",
-    	"Can you list the top yuri animes?",
-    	"What's the best yuri anime of all time?",
-    	"Suggest some best yuri animes ever."
-  	],
-      "responses": [
-    	"Sure, some top yuri animes are Bloom Into You, Revolutionary Girl Utena, and Citrus.",
-    	"You might enjoy watching yuri animes like Strawberry Panic, Aoi Hana, and Sweet Blue Flowers.",
-    	"Some of the top-rated yuri animes are Kase-san and Morning Glories, Maria Watches Over Us, and Whispered Words.",
-    	"You should definitely watch yuri animes like Yurikuma Arashi, Simoun, and Candy Boy."
-  	]
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
       },
     {
-      "tag": "about love comedy",
-      "patterns": [
-        "What is a love comedy?",
-        "Can you tell me about love comedies?",
-        "What's the definition of a love comedy?",
-        "Why are love comedies popular?",
-        "What makes a love comedy unique?",
-        "Can you explain what a love comedy is?",
-        "I'm not familiar with love comedies, can you give me a brief overview?"
-      ],
-      "responses": [
-        "A love comedy, also known as a romantic comedy or rom-com, is a genre of media that combines elements of romance and comedy. Typically, these stories focus on a romantic relationship between two main characters and feature humorous situations, misunderstandings, and obstacles to overcome. Love comedies can be found in various forms of media such as anime, manga, TV shows, and movies. The genre is popular among audiences of all ages and backgrounds, as it often provides light-hearted entertainment and relatable characters."
-      ]
+        "tag": "what_is_anime",
+        "patterns": [
+            "Can you recommend some classic anime series?",
+            "Are there any famous anime movies?",
+            "I'm curious about anime, can you give me a basic understanding of it?",
+            "How has anime influenced the entertainment industry?",
+            "Could you provide a brief explanation of anime?",
+            "What are some iconic anime characters?",
+            "Can you shed some light on the concept of anime?",
+            "I'm not familiar with anime, can you give me a brief explanation?",
+            "I've heard the term 'anime' before, but I'm not exactly sure what it means. Can you help clarify?",
+            "What does the term 'anime' mean?"
+        ],
+        "responses": [
+            "Anime refers to animated productions originating from Japan. It can cover a wide range of genres and styles, including action, romance, comedy, drama, and more. Anime has gained a worldwide following and is known for its unique visual style, storytelling, and diverse themes. It has become a significant part of Japanese popular culture and has had a significant influence on Western media.",
+            "Anime is a form of animation that originated in Japan. It features unique visual styles and often covers a wide range of genres and themes. It has gained a devoted following worldwide and has influenced Western media in significant ways. Whether you're a long-time fan or new to the medium, there's always something new and exciting to discover in the world of anime.",
+            "At its most basic, anime is a style of animated productions that originated in Japan. It covers a wide range of genres and themes and has become a significant part of Japanese popular culture. With its unique visual style and storytelling, anime has gained a devoted following worldwide. Whether you're looking for action-packed adventures, heartfelt romance, or anything in between, there's an anime out there for you to enjoy."
+        ]
     },
     {
-      "tag": "love comedy anime",
-      "patterns": [
-        "What are some good love comedy anime?",
-        "Can you recommend some love comedy anime?",
-        "What are the best love comedy anime to watch?",
-        "What's a popular love comedy anime?",
-        "What's your favorite love comedy anime?",
-        "Can you suggest some good love comedy anime?",
-        "I'm in the mood for a love comedy anime. Any recommendations?",
-        "Which love comedy anime are considered must-watch?",
-        "What are some highly recommended love comedy anime?",
-        "Do you have any favorite love comedy anime?"
-      ],
-      "responses": [
-        "There are many great love comedy anime to watch, including Toradora!, Ouran High School Host Club, Kaguya-sama: Love is War, Love, Chunibyo & Other Delusions, Monthly Girls' Nozaki-kun, and Nisekoi. These anime feature engaging characters, witty dialogue, and romantic situations that are sure to keep viewers entertained. It's worth noting that the love comedy genre is quite diverse, and each anime may have its unique twist on the formula."
-      ]
+        "tag": "popular_anime",
+        "patterns": [
+            "List some famous animes.",
+            "Which anime series have the largest fanbase?",
+            "Tell me about popular animes.",
+            "Suggest some must watch animes.",
+            "What are some must-watch anime series?",
+            "I'm interested in popular animes.",
+            "What are the trending anime series?",
+            "Are there any award-winning anime shows?",
+            "Tell me about some critically acclaimed anime.",
+            "Are there any must-see anime series you can suggest?"
+        ],
+        "responses": [
+            "There are so many popular anime! Some current popular ones include Jujutsu Kaisen, Attack on Titan, and Demon Slayer",
+            "If you're looking for something popular, you might enjoy My Hero Academia, Haikyuu!!, or One Piece",
+            "Sure thing! Check out Black Clover, Naruto, or Sword Art Online for some popular anime",
+            "You should definitely watch animes like Naruto, Death Note, Fullmetal Alchemist: Brotherhood, and Demon Slayer.",
+            "Popular anime series often include shows like One Punch Man, Tokyo Ghoul, and The Promised Neverland.",
+            "Some of the most beloved anime of all time are Dragon Ball Z, Sailor Moon, and Cowboy Bebop.",
+            "If you're a fan of fantasy, you'll love anime series like Fairy Tail, Attack on Titan, and Sword Art Online.",
+            "Teenagers often enjoy anime such as My Hero Academia, Demon Slayer, and The Seven Deadly Sins."
+        ]
     },
     {
-      "tag": "love comedy manga",
-      "patterns": [
-        "What are some good love comedy manga?",
-        "Can you recommend some love comedy manga?",
-        "What's a popular love comedy manga?",
-        "What's your favorite love comedy manga?",
-        "Can you suggest some good love comedy manga?",
-        "I'm looking for love comedy manga recommendations. Any suggestions?",
-        "Which love comedy manga are considered the best to read?",
-        "What are some popular love comedy manga titles?",
-        "Do you have any favorite love comedy manga?"
-      ],
-      "responses": [
-        "If you enjoy love comedies, there are many excellent manga series to check out, including Love Hina, Toradora!, Kaguya-sama: Love is War, Horimiya, My Love Story!!, and Maid-sama!. These manga often have longer storylines and character arcs than their anime counterparts, allowing for even more development and emotional investment in the characters. Additionally, manga often explores more mature themes and romantic relationships than anime, making them an excellent choice for fans of the genre."
-      ]
+        "tag": "anime_trivia",
+        "patterns": [
+            "Do you know any surprising facts about anime?",
+            "I want to know some unknown facts about anime",
+            "Do you know any anime fan conventions?",
+            "What's a lesser-known fact about anime that you find interesting?",
+            "Can you share a fun fact about anime?",
+            "What are some iconic anime soundtracks?",
+            "What are some popular anime merchandise?",
+            "Can you share some anime trivia?",
+            "Tell me a fun fact about anime",
+            "I want to know more about anime"
+        ],
+        "responses": [
+            "Did you know that the first anime was produced in 1917?",
+            "In Japan, anime is not just for kids. Many adults also enjoy watching anime.",
+            "Anime is often adapted from manga, which are Japanese comic books. However, there are also many original anime series that are not based on manga.",
+            "Did you know that Spirited Away is the only non-English animated film to win an Academy Award for Best Animated Feature?",
+            "One interesting fact is that many anime are based on manga, but not all. Some are completely original or adapted from light novels or video games.",
+            "Did you know that 'anime' is actually a shortened form of the word 'animation' in Japanese?",
+            "A surprising fact is that the longest-running anime, 'Sazae-san', has over 7,500 episodes.",
+            "Some famous anime creators include Hayao Miyazaki, Osamu Tezuka, and Makoto Shinkai."
+        ]
     },
     {
-      "tag": "about anime game",
-      "patterns": [
-        "What is an anime game?",
-        "Can you tell me about anime games?",
-        "What makes a game an anime game?",
-        "How are anime games different from regular video games?",
-        "What are some popular anime games?",
-        "What defines an anime game?",
-        "Could you explain the concept of anime games?",
-        "What are the distinguishing features of anime games?",
-        "What sets anime games apart from conventional video games?"
-      ],
-      "responses": [
-        "An anime game is a type of video game that is inspired by or based on anime and manga. These games often feature characters and storylines from popular anime and manga series, and may use visual styles and storytelling techniques that are typical of anime. Some anime games are based on existing anime series, while others are original creations that draw on anime and manga aesthetics. Some popular anime games include Dragon Ball Z: Kakarot, Attack on Titan, and Persona 5."
-      ]
+        "tag": "anime_streaming",
+        "patterns": [
+            "Where can I watch anime online?",
+            "What are some popular online platforms to watch anime?",
+            "Can you recommend some good anime streaming platforms?",
+            "What are some websites to watch dubbed anime?",
+            "What are some good anime streaming sites?",
+            "Are there any free anime streaming sites?",
+            "Can you suggest reliable websites for streaming anime?",
+            "Where can I find anime with English subtitles?",
+            "What are some reliable websites to watch anime online?",
+            "What are some recommended anime streaming platforms?"
+        ],
+        "responses": [
+            "Some popular anime streaming sites include Crunchyroll, Funimation, Netflix, Hulu, and Amazon Prime Video.",
+            "There are many websites where you can watch anime online, but make sure to choose a legal and safe streaming site to avoid any malware or other security risks.",
+            "You can find many anime series and movies on various streaming platforms, such as Netflix, Hulu, Crunchyroll, Funimation, and Amazon Prime Video. Some of these platforms offer free trials or limited-time offers."
+        ]
     },
     {
-      "tag": "best moments in anime games",
-      "patterns": [
-        "What are some of the best moments in anime games?",
-        "Can you tell me about the most memorable scenes in anime games?",
-        "What are the most exciting battles in anime games?",
-        "What are some of the saddest moments in anime games?",
-        "What are some standout moments in anime games?",
-        "What are some thrilling battles in anime games?",
-        "What are some of the most heart-wrenching moments in anime games?",
-        "Tell me about the coolest scenes in anime games.",
-        "Tell me about the most impressive scenes in anime games."
-      ],
-      "responses": [
-        "Anime games are known for their epic battles, emotional moments, and memorable scenes. Some of the best moments in anime games include Cloud's battle against Sephiroth in Final Fantasy VII, Goku's fight against Frieza in Dragon Ball Z: Kakarot, and the opening sequence of Persona 5. Other memorable moments include the ending of Kingdom Hearts II, the final battle against Xemnas, and the tragic death of Aerith in Final Fantasy VII. Additionally, many fans love the emotional moments and character development in games like Persona 5, which feature complex and well-developed characters."
-      ]
-    },    
-    {
-      "tag": "music_anime",
-      "patterns": [
-        "Can you recommend a good music anime?",
-        "I'm in the mood for an anime with music",
-        "What are some good music anime?",
-        "Can you recommend a music anime with a unique concept?",
-        "I'm looking for a music anime with a diverse cast of characters. Any suggestions?",
-        "Can you suggest a good music-themed anime series?",
-        "I'm in the mood for an anime that revolves around music. Any recommendations?",
-        "What are some recommended music anime that I can watch?",
-        "I'm looking for a music anime with an interesting and unique concept. Any suggestions?",
-        "Could you recommend a music anime that features a diverse and engaging cast of characters?"
-      ],
-      "responses": [
-        "Absolutely! If you like rock music, you might enjoy Beck: Mongolian Chop Squad, K-On! is a great option for fans of pop and alternative music, and Your Lie in April has classical music performances.",
-        "Sure thing! Try Nana for a story about two musicians pursuing their dreams, Kids on the Slope for jazz music, and Hibike! Euphonium for a school band setting.",
-        "Definitely! Check out Sound! Euphonium for a story about a high school concert band, Shigatsu wa Kimi no Uso for a classical music tale, or Tari Tari for a mix of music genres."
-      ]
+        "tag": "anime_convention",
+        "patterns": [
+            "I want to attend anime conventions.",
+            "What are some anime conventions?",
+            "Are there any cosplay events at anime conventions?",
+            "Can you suggest some anime conventions?",
+            "Suggest some must-attend anime conventions.",
+            "I'm interested in anime conventions.",
+            "Can you list the top anime conventions?",
+            "Tell me about guest appearances at anime conventions.",
+            "List some top anime conventions.",
+            "Where are the popular anime conventions held?"
+        ],
+        "responses": [
+            "Sure, some of the biggest anime conventions are Anime Expo in Los Angeles, Otakon in Washington D.C., and Anime Japan in Tokyo.",
+            "You might enjoy attending anime conventions like Comic Market (Comiket) in Tokyo, Japan Expo in Paris, and Anime Central in Rosemont, Illinois.",
+            "Some of the top-rated anime conventions are Anime North in Toronto, Sakura-Con in Seattle, and A-Kon in Fort Worth, Texas.",
+            "You should definitely consider attending anime conventions like Anime Midwest in Chicago, Anime Boston in Boston, and MomoCon in Atlanta."
+        ]
     },
     {
-      "tag": "anime_composers",
-      "patterns": [
-        "Can you recommend some great anime music composers?",
-        "Who are some popular anime music composers?",
-        "I love anime music! Who are the best composers?",
-        "What are some of the most iconic anime soundtracks?",
-        "Can you suggest some anime music composers who specialize in a certain genre?",
-        "Can you suggest some renowned composers of anime music?",
-        "Who are some notable anime music composers that you would recommend?",
-        "I'm a fan of anime music and I'm curious about the top composers in the industry. Any suggestions?",
-        "What are some iconic anime soundtracks that are worth listening to?",
-        "Do you know any anime music composers who are known for their expertise in a specific genre?"
-      ],
-      "responses": [
-        "Of course! Some of the most talented anime music composers include Yuki Kajiura, Yoko Kanno, Hiroyuki Sawano, and Joe Hisaishi!",
-        "You might want to check out music from composers like Kenji Kawai, Taku Iwasaki, or Koji Kondo!",
-        "Definitely! Some other great anime music composers include Michiru Oshima, Shiro Sagisu, and Akira Senju."
-      ]
+        "tag": "anime_genres",
+        "patterns": [
+            "Are there any slice-of-life anime series?",
+            "Which anime genres have romance elements?",
+            "Which anime genre is the best?",
+            "Are there any popular shounen anime?",
+            "What anime genres do you enjoy?",
+            "Can you list some anime genres?",
+            "What type of anime do you suggest?",
+            "Recommend some fantasy anime series.",
+            "Can you suggest some specific genres?",
+            "What are some popular anime genres?"
+        ],
+        "responses": [
+            "Some popular anime genres include action, adventure, romance, comedy, drama, and fantasy.",
+            "Sure, here are some anime genres: action, adventure, romance, comedy, drama, horror, science fiction, fantasy, and mecha.",
+            "Anime comes in various genres. Some of the main ones include action, adventure, comedy, drama, fantasy, horror, mecha, romance, and slice of life."
+        ]
     },
     {
-      "tag": "anime_bands",
-      "patterns": [
-        "Can you recommend some anime bands?",
-        "I love anime music! What are some great anime bands?",
-        "Do you know any cool anime bands?",
-        "What are some popular anime bands?",
-        "Can you recommend some upbeat anime bands?",
-        "Can you suggest some anime bands that I should check out?",
-        "I'm a fan of anime music and I'm looking for some awesome anime bands. Any recommendations?",
-        "I love listening to anime music and I'm interested in discovering new anime bands. Any suggestions?",
-        "What are some well-known anime bands that have gained popularity?",
-        "I'm in the mood for some lively and energetic anime music. Can you recommend some upbeat anime bands?"
-      ],
-      "responses": [
-        "Definitely! Check out bands like AKB0048, Girls Dead Monster, and Roselia for some awesome anime music.",
-        "If you're a fan of anime music, you might enjoy the bands Poppin' Party, Afterglow, and RAISE A SUILEN.",
-        "Sure thing! Some great anime bands to listen to include The Pillows, FLOW, and Scandal."
-      ]
+        "tag": "top_anime",
+        "patterns": [
+            "Suggest some top anime of all time.",
+            "I'm in search of a highly recommended anime.",
+            "Can you suggest some anime that are critically acclaimed?",
+            "What are some highly acclaimed anime series?",
+            "Which anime are considered must-watch?",
+            "I'm looking for a great anime to watch",
+            "Can you recommend some good anime?",
+            "Tell me about some popular anime series.",
+            "Which anime should I watch?",
+            "What are the all-time favorite anime?"
+        ],
+        "responses": [
+            "Some of the top anime are: Attack on Titan, Fullmetal Alchemist: Brotherhood, Naruto, Death Note, Cowboy Bebop, One Punch Man, Dragon Ball Z, My Hero Academia, Neon Genesis Evangelion, and Sword Art Online.",
+            "If you're looking for great anime, you should definitely check out Attack on Titan, Fullmetal Alchemist: Brotherhood, Naruto, Death Note, Cowboy Bebop, One Punch Man, Dragon Ball Z, My Hero Academia, Neon Genesis Evangelion, or Sword Art Online.",
+            "There are so many great anime out there, but some of the top ones are Attack on Titan, Fullmetal Alchemist: Brotherhood, Naruto, Death Note, Cowboy Bebop, One Punch Man, Dragon Ball Z, My Hero Academia, Neon Genesis Evangelion, and Sword Art Online."
+        ]
     },
     {
-      "tag": "anime_singers",
-      "patterns": [
-        "Who are some of the best anime singers?",
-        "Can you recommend any anime singers?",
-        "What are some great anime singers to listen to?",
-        "What are some of your favorite anime singers?",
-        "Can you suggest some Japanese singers who sing anime music?",
-        "I'm looking for some good anime singers. Any recommendations?",
-        "Can you suggest some talented anime singers?",
-        "I love anime music and I'm interested in exploring different anime singers. Any recommendations?",
-        "What are some popular anime singers known for their amazing vocals?",
-        "I'm a fan of anime music and I'm looking for some great anime singers to add to my playlist. Any suggestions?",
-        "I enjoy listening to anime music and I'm curious about Japanese singers who specialize in anime songs. Can you recommend some?",
-        "I'm in the mood for some captivating vocals in anime music. Can you suggest some talented anime singers?"
-      ],
-      "responses": [
-        "Of course! You might enjoy listening to singers like LiSA, Yui, and Eir Aoi for some amazing anime music.",
-        "If you're a fan of anime music, check out singers like Maaya Sakamoto, Aimer, and Nana Mizuki for some great songs.",
-        "Sure thing! Some awesome anime singers to listen to include Kalafina, Konomi Suzuki, and Aoi Tada."
-      ]
+        "tag": "action_anime",
+        "patterns": [
+            "Do you have any recommendations for action anime series?",
+            "Suggest some best action animes ever.",
+            "What are some good action anime?",
+            "I'm a fan of action-packed anime. Can you suggest some good titles?",
+            "What are some recent action anime releases?",
+            "Are there any action anime movies worth watching?",
+            "Can you recommend some good action anime?",
+            "Tell me about popular action anime series.",
+            "Can you recommend any action anime with a great storyline?",
+            "Which action anime has the best fight scenes?"
+        ],
+        "responses": [
+            "Great choice! Some good action anime are Attack on Titan, Naruto, and Fullmetal Alchemist",
+            "If you love action anime, you might enjoy Sword Art Online, My Hero Academia, or One Piece",
+            "Sure thing! Check out Demon Slayer, Hunter x Hunter, or Black Clover for some great action anime"
+        ]
     },
     {
-      "tag": "anime_producer",
-      "patterns": [
-        "Which anime production companies make good shows?",
-        "Can you recommend me some anime studios?",
-        "What are the top anime production companies?",
-        "What are some anime studios known for producing action-packed anime?",
-        "What are some of the most popular anime studios right now?",
-        "I'm looking for anime that have great storytelling. Can you recommend me some production companies that focus on that?"
-      ],
-      "responses": [
-        "There are many great anime production companies, some of the top ones are: Kyoto Animation, Production I.G., Studio Ghibli, Madhouse, and Bones.",
-        "Sure! Some great anime studios include: Trigger, Shaft, ufotable, and A-1 Pictures.",
-        "If you're looking for quality anime, you can't go wrong with anime production companies like Wit Studio, P.A. Works, Sunrise, or Gainax."
-      ]
+        "tag": "romance_anime",
+        "patterns": [
+            "I'm in the mood for a heartwarming romance anime. Any recommendations?",
+            "What are some good romance anime?",
+            "Are there any romance anime movies worth watching?",
+            "Tell me about popular romance anime series.",
+            "Any good romance anime suggestions?",
+            "Can you suggest some good romance anime series?",
+            "Recommend some heartwarming slice-of-life romance anime.",
+            "List some top romance animes.",
+            "I'm looking for a sweet and romantic anime to watch. Any suggestions?",
+            "I want to watch romance animes."
+        ],
+        "responses": [
+            "Definitely! Some great romance anime are Your Lie in April, Clannad, and Toradora!",
+            "If you're in the mood for romance, you might enjoy Fruits Basket, Love, Chunibyo & Other Delusions, or Golden Time",
+            "Sure thing! Check out Kaguya-sama: Love is War, Say \"I Love You\", or Ouran High School Host Club for some great romance anime"
+        ]
     },
     {
-      "tag": "manga",
-      "patterns": [
-          "Can you recommend me some good manga?",
-          "What are some popular manga?",
-          "I'm looking for a new manga to read",
-          "What are some must-read manga series?",
-          "Can you suggest some manga titles for beginners?",
-          "Do you have any recommendations for manga with strong female protagonists?",
-          "List some top mangas.",
-          "Suggest some best mangas ever."
-      ],
-      "responses": [
-          "Sure thing! If you're into action and adventure, you might enjoy Attack on Titan, Naruto, or One Piece. For something more slice-of-life, check out A Silent Voice, Your Lie in April, or Fruits Basket. If you like horror, try Tokyo Ghoul or Uzumaki.",
-          "There are so many great manga out there! Some popular ones include Demon Slayer, My Hero Academia, and Fullmetal Alchemist. For romance, try Kaguya-sama: Love is War or Horimiya. And for sports, check out Haikyu!! or Slam Dunk.",
-          "There's always something new to read! Some recent manga that have been getting a lot of attention include Jujutsu Kaisen, Chainsaw Man, and Spy x Family. For something more classic, try Astro Boy or Dragon Ball."
-      ]
+        "tag": "comedy_anime",
+        "patterns": [
+            "Suggest some best comedy animes ever.",
+            "What are some good comedy animes?",
+            "I'm interested in comedy animes.",
+            "Looking for light-hearted and funny animes. Any suggestions?",
+            "I need a good laugh. Any recommendations for comedy animes?",
+            "Can you list the top comedy animes?",
+            "Tell me about some comedy animes that are known for their comedic timing.",
+            "Which are the best comedy animes?",
+            "Are there any hilarious animes you can suggest?",
+            "I want to watch comedy animes."
+        ],
+        "responses": [
+            "Sure, some top comedy animes are One Punch Man, Gintama, Konosuba, and The Disastrous Life of Saiki K.",
+            "You might enjoy watching comedy animes like Nichijou, Daily Lives of High School Boys, Mob Psycho 100, and Kaguya-sama: Love is War.",
+            "Some of the top-rated comedy animes are Ouran High School Host Club, Miss Kobayashi's Dragon Maid, Great Teacher Onizuka, and Hinamatsuri.",
+            "You should definitely watch comedy animes like Haven't You Heard? I'm Sakamoto, The Devil is a Part-Timer!, Pop Team Epic, and Space Dandy."
+        ]
     },
     {
-      "tag": "manga_author",
-      "patterns": [
-        "Can you recommend any good manga authors?",
-        "Who are some of the best manga writers?",
-        "I'm looking for a great manga creator",
-        "Any recommendations for manga artists?",
-        "Who are your favorite manga authors?",
-        "Can you suggest some talented manga authors?",
-        "I love manga and I'm interested in discovering new manga authors. Any recommendations?",
-        "What are some popular manga writers known for their exceptional storytelling?",
-        "I'm a fan of manga and I'm looking for some great manga authors to follow. Any suggestions?",
-        "I enjoy reading manga and I'm curious about talented manga artists. Can you recommend some?",
-        "I'm in the mood for some captivating manga stories. Can you suggest some talented manga authors?"
-      ],
-      "responses": [
-        "Sure! Some great manga authors include Akiko Higashimura, Naoki Urasawa, and Inio Asano.",
-        "If you're looking for talented manga writers, you might want to check out Rumiko Takahashi, Clamp, or Hirohiko Araki.",
-        "Definitely! You should check out the work of Junji Ito, Yoshihiro Togashi, and Hiromu Arakawa.",
-        "There are so many amazing manga artists out there! Some of my favorites are Masashi Kishimoto, Eiichiro Oda, and Tsugumi Ohba.",
-        "I have a lot of favorite manga authors, but some of the best include Akira Toriyama, Takehiko Inoue, and Katsura Hoshino."
-      ]
-    },    
-    {
-      "tag": "anime_movie",
-      "patterns": [
-        "What are some good anime movies?",
-        "Can you recommend some anime movies?",
-        "I'm looking for a good anime movie",
-        "What are some classic anime movies worth watching?",
-        "Can you suggest some anime movies with great music?",
-        "I'm interested in anime movies.",
-    	"Which are the best anime movies?",
-        "List some top anime movies."
-      ],
-      "responses": [
-        "Sure thing! If you're in the mood for something heartwarming, try A Silent Voice or Your Name. For a great action movie, check out Akira or Sword of the Stranger. If you want something more emotional, Grave of the Fireflies and Perfect Blue are both great choices.",
-        "Absolutely! Wolf Children and The Girl Who Leapt Through Time are both wonderful slice-of-life movies. For something a little darker, check out Paprika or Ghost in the Shell. And if you're looking for something truly epic, try the movie adaptations of the Attack on Titan series.",
-        "Of course! If you want something with a strong message, try In This Corner of the World or The Anthem of the Heart. If you're looking for something with stunning visuals, Your Name and Weathering with You are both beautiful movies. And for something a little different, check out Mind Game or Redline!"
-      ]
+        "tag": "define_of_yuri_anime",
+        "patterns": [
+            "Explain yuri anime",
+            "Are there any notable yuri anime series you can tell me about?",
+            "What does yuri mean in anime?",
+            "Which are some popular yuri anime that have gained a following?",
+            "Can you explain what yuri anime is?",
+            "What type of anime is yuri?",
+            "I'm interested in yuri anime",
+            "I want to know about yuri anime",
+            "Can you provide a definition of yuri anime?",
+            "What is yuri anime?"
+        ],
+        "responses": [
+            "Yuri anime refers to a genre of anime that involves love and romantic relationships between female characters. It's sometimes also known as 'Girls' Love' or 'GL'.",
+            "Yuri is a genre of anime that focuses on the romantic relationships between women. It can range from the subtle to the explicit, and from the sweet to the dramatic.",
+            "In the context of anime, 'yuri' refers to a genre that focuses on the romantic and sexual relationships between female characters. The term comes from the Japanese word for 'lily', and it's often used to contrast with 'yaoi', which involves relationships between male characters.",
+            "Yuri anime is a genre that centers on romantic relationships between female characters. The term 'yuri' translates to 'lily' in English, symbolizing innocence, purity, and beauty, which can be themes in these types of animes."
+        ]
     },
     {
-      "tag": "anime_movie_director",
-      "patterns": [
-        "Who are some famous anime movie directors?",
-        "Can you recommend some anime movies directed by famous directors?",
-        "Which anime movie directors are known for their great works?",
-        "Can you tell me about some influential anime movie directors?",
-        "Which anime movie directors have won awards for their work?",
-        "Who are some renowned directors in the world of anime movies?",
-        "Can you suggest any anime movies directed by well-known filmmakers?",
-        "Which anime movie directors have a reputation for creating exceptional works?",
-        "Can you provide information about influential anime movie directors?",
-        "Which anime movie directors have been honored with awards for their contributions?"
-      ],  
-      "responses": [
-        "Hayao Miyazaki is one of the most well-known anime movie directors, and his works such as Spirited Away and Princess Mononoke are considered classics.",
-        "Mamoru Hosoda is another great anime movie director, known for his works like Wolf Children and The Girl Who Leapt Through Time.",
-        "Makoto Shinkai is a rising star in the anime movie industry, and his works like Your Name and Weathering with You have gained critical acclaim.",
-        "Isao Takahata, the co-founder of Studio Ghibli, directed several masterpieces such as Grave of the Fireflies and Only Yesterday.",
-        "Katsuhiro Otomo, known for his work on the iconic Akira, is another famous anime movie director to check out."
-      ]
+        "tag": "yuri_anime",
+        "patterns": [
+            "Recommend some romantic yuri animes.",
+            "Which yuri anime series have been praised for their representation and storytelling?",
+            "Suggest some best yuri animes ever.",
+            "Any yuri animes that explore complex themes and character dynamics?",
+            "List some top yuri animes.",
+            "Can you list the top yuri animes?",
+            "Which are the best yuri animes?",
+            "I'm interested in yuri animes.",
+            "Tell me about some notable yuri animes that have received critical acclaim.",
+            "Tell me about yuri animes."
+        ],
+        "responses": [
+            "Sure, some top yuri animes are Bloom Into You, Revolutionary Girl Utena, and Citrus.",
+            "You might enjoy watching yuri animes like Strawberry Panic, Aoi Hana, and Sweet Blue Flowers.",
+            "Some of the top-rated yuri animes are Kase-san and Morning Glories, Maria Watches Over Us, and Whispered Words.",
+            "You should definitely watch yuri animes like Yurikuma Arashi, Simoun, and Candy Boy."
+        ]
     },
     {
-      "tag": "what is a light novel",
-      "patterns": [
-        "What is a light novel?",
-        "Can you explain what a light novel is?",
-        "Could you give me an overview of light novels?",
-        "What's the difference between a light novel and a regular novel?",
-        "How do light novels differ from manga and anime?",
-        "I'm not familiar with light novels, could you give me a brief description?",
-        "How would you describe the concept of light novels?",
-        "I want to know about light novels",
-        "Explain light novel",
-        "What type of book is a light novel?"
-      ],
-      "responses": [
-        "A light novel is a style of Japanese novel that targets young adult readers. They are usually short and fast-paced, with illustrations scattered throughout the book. Light novels cover a wide range of genres, from fantasy and science fiction to romance and comedy. They are often adapted into anime or manga series. The term 'light novel' refers to the simple writing style and easy-to-read format, as well as the target audience, which is often younger readers. Light novels are popular in Japan and have gained a growing following in other parts of the world in recent years."
-      ]
+        "tag": "about love comedy",
+        "patterns": [
+            "Are there any notable love comedies in anime or movies?",
+            "Tell me more about the romantic and comedic elements in love comedies.",
+            "What's the definition of a love comedy?",
+            "What are some common tropes and plot devices in love comedies?",
+            "Do love comedies always have a happy ending?",
+            "Can you tell me about love comedies?",
+            "Can you explain what a love comedy is?",
+            "How do love comedies explore themes of romance and humor?",
+            "What are some classic examples of love comedies?",
+            "I'm not familiar with love comedies, can you give me a brief overview?"
+        ],
+        "responses": [
+            "A love comedy, also known as a romantic comedy or rom-com, is a genre of media that combines elements of romance and comedy. Typically, these stories focus on a romantic relationship between two main characters and feature humorous situations, misunderstandings, and obstacles to overcome. Love comedies can be found in various forms of media such as anime, manga, TV shows, and movies. The genre is popular among audiences of all ages and backgrounds, as it often provides light-hearted entertainment and relatable characters."
+        ]
     },
     {
-      "tag": "writing style of light novel",
-      "patterns": [
-        "What is the writing style of a light novel?",
-        "How is the writing style of a light novel different from a regular novel?",
-        "What are the key characteristics of a light novel's writing style?",
-        "Is the writing style of a light novel more straightforward than that of a regular novel?",
-        "What techniques do light novel authors use to keep the pace of the story fast?",
-        "Do light novels use simpler language than regular novels?",
-        "Are light novels typically written in first person or third person point of view?",
-        "How important are illustrations in a light novel, and do they affect the writing style?"
-      ],
-      "responses": [
-        "The writing style of a light novel is typically simple and easy to read. They often use a first-person or limited third-person perspective, and the prose is generally straightforward and dialogue-heavy. Light novels also tend to have a faster pace than traditional novels, with shorter chapters and cliffhangers at the end of each one. The stories are often accompanied by illustrations, which are usually done by a separate artist. The illustrations are an important part of the light novel format and help to set the tone and style of the story."
-      ]
+        "tag": "love comedy anime",
+        "patterns": [
+            "Tell me about some love comedy anime with memorable couples and humorous situations.",
+            "What's your favorite love comedy anime?",
+            "I'm in the mood for a love comedy anime. Any recommendations?",
+            "Looking for anime that combines love and comedy. Any suggestions?",
+            "Can you suggest some good love comedy anime?",
+            "What are some highly recommended love comedy anime?",
+            "Any heartwarming love comedy anime you can suggest?",
+            "Recommend some romantic comedy anime.",
+            "What are the best love comedy anime to watch?",
+            "Can you recommend some love comedy anime?"
+        ],
+        "responses": [
+            "There are many great love comedy anime to watch, including Toradora!, Ouran High School Host Club, Kaguya-sama: Love is War, Love, Chunibyo & Other Delusions, Monthly Girls' Nozaki-kun, and Nisekoi. These anime feature engaging characters, witty dialogue, and romantic situations that are sure to keep viewers entertained. It's worth noting that the love comedy genre is quite diverse, and each anime may have its unique twist on the formula."
+        ]
     },
     {
-      "tag": "light_novels",
-      "patterns": [
-        "Can you recommend a good light novel?",
-        "What are some popular light novels?",
-        "Any good light novels you'd recommend?",
-        "I want to start reading light novels, where should I begin?",
-        "I'm in search of an engaging light novel to read. Any recommendations?",
-        "What are some well-known light novels that you could recommend?",
-        "Are there any particular light novels that you consider to be worth reading?",
-        "I'm interested in delving into the world of light novels. Where would you suggest I start my journey?"
-      ],
-      "responses": [
-        "Absolutely! If you're into fantasy, you might enjoy Sword Art Online, Re:Zero, or The Rising of the Shield Hero",
-        "If you're looking for something with a bit of romance, try Spice and Wolf, My Youth Romantic Comedy Is Wrong, As I Expected, or Toradora!",
-        "For a more action-packed read, check out That Time I Got Reincarnated as a Slime, Overlord, or The Devil is a Part-Timer!",
-        "Sure thing! How about starting with something like Konosuba: God's Blessing on This Wonderful World!, The Melancholy of Haruhi Suzumiya, or No Game No Life?",
-        "There are so many great light novels out there! Some other popular ones include A Certain Magical Index, The Irregular at Magic High School, and DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?"
-      ]
+        "tag": "love comedy manga",
+        "patterns": [
+            "Can you recommend some love comedy manga?",
+            "Any heartwarming love comedy manga you can suggest?",
+            "Tell me about some love comedy manga with memorable couples and humorous situations.",
+            "Are there any ongoing love comedy manga series that you can recommend?",
+            "What are some good love comedy manga?",
+            "I'm looking for love comedy manga recommendations. Any suggestions?",
+            "What's a popular love comedy manga?",
+            "Do you have any favorite love comedy manga?",
+            "Can you suggest some good love comedy manga?",
+            "Which love comedy manga are considered the best to read?"
+        ],
+        "responses": [
+            "If you enjoy love comedies, there are many excellent manga series to check out, including Love Hina, Toradora!, Kaguya-sama: Love is War, Horimiya, My Love Story!!, and Maid-sama!. These manga often have longer storylines and character arcs than their anime counterparts, allowing for even more development and emotional investment in the characters. Additionally, manga often explores more mature themes and romantic relationships than anime, making them an excellent choice for fans of the genre."
+        ]
     },
     {
-      "tag": "light_novel_genres",
-      "patterns": [
-        "What are some popular light novel genres?",
-        "Can you recommend some good light novel genres?",
-        "I'm looking for light novels in a specific genre, any suggestions?",
-        "What are the different categories of light novel genres?",
-        "Are there any unique genres in light novels that are not common in regular novels?",
-        "Which light novel genres are currently trending?",
-        "I'm interested in a particular light novel genre, can you suggest some titles?",
-        "What are some classic light novel genres?"
-      ],
-      "responses": [
-        "There are many popular light novel genres! Some of the most common ones include isekai (transported to another world), fantasy, and romance.",
-        "Sure thing! You might enjoy light novels in genres like mystery, sci-fi, or action.",
-        "Of course! Check out light novels in genres like horror, comedy, or adventure for some variety."
-      ]
-    },    
-    {
-      "tag": "isekai",
-      "patterns": [
-        "Can you recommend a good Isekai novel?",
-        "I'm looking for an Isekai light novel to read",
-        "What are some popular Isekai light novels?",
-        "What are some unique features of Isekai light novels?",
-        "Are there any classic or must-read Isekai light novels?",
-        "I'm in search of an engaging Isekai light novel to read. Any recommendations?",
-        "What are some well-known Isekai light novels that you could recommend?",
-        "Could you suggest a captivating Isekai novel?"
-      ],
-      "responses": [
-        "For popular Isekai light novels, you can check out Sword Art Online, Re:Zero - Starting Life in Another World, and Overlord",
-        "If you're looking for a good Isekai light novel, try That Time I Got Reincarnated as a Slime, So I'm a Spider, So What?, or The Rising of the Shield Hero",
-        "Sure thing! Other great Isekai light novels include Konosuba: God's Blessing on This Wonderful World!, No Game No Life, and Death March to the Parallel World Rhapsody"
-      ]
+        "tag": "about anime game",
+        "patterns": [
+            "Are there any anime-inspired video games that you can recommend?",
+            "Which anime games have received critical acclaim?",
+            "What are the distinguishing features of anime games?",
+            "Can you suggest some notable anime games that are known for their gameplay and visuals?",
+            "Could you explain the concept of anime games?",
+            "What are some anime games that have a large fanbase?",
+            "Tell me about games based on popular anime series.",
+            "Can you tell me about anime games?",
+            "What makes a game an anime game?",
+            "I'm interested in playing anime games. Any recommendations?"
+        ],
+        "responses": [
+            "An anime game is a type of video game that is inspired by or based on anime and manga. These games often feature characters and storylines from popular anime and manga series, and may use visual styles and storytelling techniques that are typical of anime. Some anime games are based on existing anime series, while others are original creations that draw on anime and manga aesthetics. Some popular anime games include Dragon Ball Z: Kakarot, Attack on Titan, and Persona 5."
+        ]
     },
     {
-      "tag": "fantasy",
-      "patterns": [
-        "What are some good fantasy light novels?",
-        "Can you recommend a fantasy novel?",
-        "I'm in the mood for a fantasy light novel",
-        "Do you have any recommendations for a beginner to the fantasy light novel genre?",
-        "What are some unique features of fantasy light novels compared to other genres?",
-        "Suggest some best fantasy light novels ever.",
-        "I want to read fantasy light novels.",
-    	"List some top fantasy light novels.",
-        "Can you list the top fantasy light novels?"
-      ],
-      "responses": [
-        "For some great fantasy light novels, check out The Lord of the Rings, A Song of Ice and Fire, and The Kingkiller Chronicle",
-        "If you're in the mood for fantasy, try Mistborn, The Wheel of Time, or The Stormlight Archive",
-        "Sure thing! Other great fantasy light novels include The Belgariad, The Malazan Book of the Fallen, and The First Law Trilogy"
-      ]
+        "tag": "best moments in anime games",
+        "patterns": [
+            "What are some thrilling battles in anime games?",
+            "What are some standout moments in anime games?",
+            "Are there any epic boss battles in anime games?",
+            "What are some unexpected plot twists in anime games?",
+            "What are some iconic moments in popular anime game franchises?",
+            "What are some of the saddest moments in anime games?",
+            "Tell me about the coolest scenes in anime games.",
+            "What are the most exciting battles in anime games?",
+            "Can you share some examples of emotional storytelling in anime games?",
+            "Tell me about the most visually stunning sequences in anime games."
+        ],
+        "responses": [
+            "Anime games are known for their epic battles, emotional moments, and memorable scenes. Some of the best moments in anime games include Cloud's battle against Sephiroth in Final Fantasy VII, Goku's fight against Frieza in Dragon Ball Z: Kakarot, and the opening sequence of Persona 5. Other memorable moments include the ending of Kingdom Hearts II, the final battle against Xemnas, and the tragic death of Aerith in Final Fantasy VII. Additionally, many fans love the emotional moments and character development in games like Persona 5, which feature complex and well-developed characters."
+        ]
     },
     {
-      "tag": "slice_of_life",
-      "patterns": [
-        "What are some good Slice of Life light novels?",
-        "Can you recommend a Slice of Life novel?",
-        "I'm in the mood for a Slice of Life light novel",
-        "Any good recommendations for Slice of Life novels?",
-        "Looking for a good Slice of Life read, any suggestions?",
-        "I want to watch slice of life animes.",
-    	"List some top slice of life animes."
-      ],
-      "responses": [
-        "For some great Slice of Life light novels, check out My Youth Romantic Comedy Is Wrong, As I Expected, K-On!, and The Pet Girl of Sakurasou",
-        "If you're in the mood for Slice of Life, try Barakamon, Non Non Biyori, or Hyouka",
-        "Sure thing! Other great Slice of Life light novels include A Silent Voice, Bunny Drop, and Aria"
-      ]
+        "tag": "music_anime",
+        "patterns": [
+            "Can you recommend a good music anime?",
+            "Can you recommend a music anime with a unique concept?",
+            "Can you suggest a good music-themed anime series?",
+            "Tell me about some music-themed anime series that have become popular.",
+            "I'm in the mood for an anime with music",
+            "I'm looking for a music anime with a diverse cast of characters. Any suggestions?",
+            "Are there any music anime that explore the journey of aspiring musicians?",
+            "Are there any music anime with a focus on classical music?",
+            "I'm in the mood for an anime that revolves around music. Any recommendations?",
+            "Can you suggest a music anime that incorporates multiple music genres?"
+        ],
+        "responses": [
+            "Absolutely! If you like rock music, you might enjoy Beck: Mongolian Chop Squad, K-On! is a great option for fans of pop and alternative music, and Your Lie in April has classical music performances.",
+            "Sure thing! Try Nana for a story about two musicians pursuing their dreams, Kids on the Slope for jazz music, and Hibike! Euphonium for a school band setting.",
+            "Definitely! Check out Sound! Euphonium for a story about a high school concert band, Shigatsu wa Kimi no Uso for a classical music tale, or Tari Tari for a mix of music genres."
+        ]
     },
     {
-      "tag": "mystery",
-      "patterns": [
-        "What are some good mystery light novels?",
-        "Can you recommend a mystery novel?",
-        "I'm in the mood for a mystery light novel",
-        "Do you know any good mystery novels?",
-        "Can you suggest a good mystery series?"
-      
-      ],
-      "responses": [
-        "For some great mystery light novels, check out The Girl with the Dragon Tattoo, The Da Vinci Code, and The Adventures of Sherlock Holmes",
-        "If you're in the mood for mystery, try The Cuckoo's Calling, The Big Sleep, or The Hound of the Baskervilles",
-        "Sure thing! Other great mystery light novels include The Name of the Rose, The Maltese Falcon, and The Shadow of the Wind"
-      ]
+        "tag": "anime_composers",
+        "patterns": [
+            "What are some examples of anime music composers who have collaborated with popular anime studios?",
+            "I love anime music! Who are the best composers?",
+            "What are some of the most iconic anime soundtracks?",
+            "Can you suggest some anime music composers who specialize in a certain genre?",
+            "Do you know any anime music composers who are known for their expertise in a specific genre?",
+            "Can you suggest some renowned composers of anime music?",
+            "I'm a fan of anime music and I'm curious about the top composers in the industry. Any suggestions?",
+            "Are there any anime music composers who have worked on multiple successful anime series?",
+            "Which anime music composers are known for their emotionally powerful compositions?",
+            "I'm looking for anime music composers who excel at creating epic battle soundtracks. Any recommendations?"
+        ],
+        "responses": [
+            "Of course! Some of the most talented anime music composers include Yuki Kajiura, Yoko Kanno, Hiroyuki Sawano, and Joe Hisaishi!",
+            "You might want to check out music from composers like Kenji Kawai, Taku Iwasaki, or Koji Kondo!",
+            "Definitely! Some other great anime music composers include Michiru Oshima, Shiro Sagisu, and Akira Senju."
+        ]
     },
     {
-      "tag": "romcom_lightnovel",
-      "patterns": [
-        "Can you recommend a RomCom light novel?",
-        "What are some good RomCom light novels?",
-        "I'm in the mood for a RomCom light novel",
-        "Looking for a light novel with a romantic comedy theme",
-        "Any recommendations for a light novel with romance and humor?"
-      ],
-      "responses": [
-        "Sure, how about giving My Youth Romantic Comedy Is Wrong, As I Expected, or Toradora! a try?",
-        "Definitely! You might enjoy The Pet Girl of Sakurasou, The Quintessential Quintuplets, or Love, Chunibyo & Other Delusions",
-        "Absolutely! Consider checking out The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat, or The 100 Girlfriends Who Really, Really, Really, Really, Really Love You.",
-        "If you like RomCom light novels, you may enjoy Bottom-Tier Character Tomozaki or Hensuki: Are you willing to fall in love with a pervert, as long as she's a cutie?",
-        "No problem! Some RomCom light novels you might enjoy are A Sister's All You Need, Gamers!, or The Hentai Prince and the Stony Cat"
-      ]
+        "tag": "anime_bands",
+        "patterns": [
+            "What are some anime bands that have a unique musical style?",
+            "I enjoy listening to rock music. Can you suggest some anime bands in that genre?",
+            "Can you recommend some anime bands?",
+            "Are there any anime bands that have performed theme songs for popular anime series?",
+            "Can you suggest some anime bands that I should check out?",
+            "Can you recommend some upbeat anime bands?",
+            "What are some anime bands that have a strong online presence and engage with their fans?",
+            "Do you know any cool anime bands?",
+            "Can you recommend any anime bands that have a large and dedicated fanbase?",
+            "I'm in the mood for some lively and energetic anime music. Can you recommend some upbeat anime bands?"
+        ],
+        "responses": [
+            "Definitely! Check out bands like AKB0048, Girls Dead Monster, and Roselia for some awesome anime music.",
+            "If you're a fan of anime music, you might enjoy the bands Poppin' Party, Afterglow, and RAISE A SUILEN.",
+            "Sure thing! Some great anime bands to listen to include The Pillows, FLOW, and Scandal."
+        ]
     },
     {
-      "tag": "light_novel_authors",
-      "patterns": [
-        "Can you recommend some good light novel authors?",
-        "Who are the most popular light novel authors?",
-        "I'm looking for light novel authors to follow, any suggestions?",
-        "Which light novel authors should I check out?",
-        "Who are some of the best light novel authors out there?",
-        "Who are the highly regarded light novel authors?",
-        "Who are some of the top-notch light novel authors in the industry?",
-        "I'm interested in discovering light novel authors worth following. Any suggestions?"
-      ],
-      "responses": [
-        "There are many great light novel authors out there! Some of the most popular ones include Reki Kawahara, Kugane Maruyama, and Kazuma Kamachi.",
-        "Sure thing! Some of the most popular light novel authors are Nisio Isin, Ryohgo Narita, and Yuu Kamiya.",
-        "Of course! You might enjoy light novels by Aneko Yusagi, Riku Misora, or Fuse."
-      ]
+        "tag": "anime_singers",
+        "patterns": [
+            "What are some great anime singers to listen to?",
+            "Who are some of the best anime singers?",
+            "I'm looking for some good anime singers. Any recommendations?",
+            "Can you recommend any anime singers who have won awards for their vocal performances?",
+            "Can you suggest some talented anime singers?",
+            "I'm in the mood for some captivating vocals in anime music. Can you suggest some talented anime singers?",
+            "Can you recommend any anime singers?",
+            "Are there any anime singers who have released successful solo albums outside of anime music?",
+            "What are some popular anime singers known for their amazing vocals?",
+            "I'm a fan of anime music and I'm looking for some great anime singers to add to my playlist. Any suggestions?"
+        ],
+        "responses": [
+            "Of course! You might enjoy listening to singers like LiSA, Yui, and Eir Aoi for some amazing anime music.",
+            "If you're a fan of anime music, check out singers like Maaya Sakamoto, Aimer, and Nana Mizuki for some great songs.",
+            "Sure thing! Some awesome anime singers to listen to include Kalafina, Konomi Suzuki, and Aoi Tada."
+        ]
     },
     {
-      "tag": "light_novel_illustrators",
-      "patterns": [
-        "Can you recommend some light novel illustrators?",
-        "Who are some great light novel illustrators?",
-        "I'm interested in the illustrators for light novels. Any suggestions?",
-        "What are some notable light novel illustrators?",
-        "Who are the most famous illustrators for light novels?",
-        "Who are the renowned illustrators for light novels?",
-        "I'm curious about light novel illustrators worth checking out. Any recommendations?",
-        "Who are the most well-known illustrators in the light novel industry?"
-      ],
-      "responses": [
-        "Definitely! Some great light novel illustrators are Kana Ishida, abec, and Hiro Kanzaki!",
-        "If you're interested in light novel illustrators, you might enjoy the works of Suzuhito Yasuda, Kantoku, or Fumio.",
-        "Sure thing! Check out the illustrations of Shigenori Soejima, Noizi Ito, or Shiromizakana for some great light novel artwork."
-      ]
+        "tag": "anime_producer",
+        "patterns": [
+            "Can you suggest some anime studios that specialize in creating unique and experimental anime?",
+            "I'm looking for anime that have great storytelling. Can you recommend me some production companies that focus on that?",
+            "What are some anime studios that have a reputation for producing anime with strong character development?",
+            "Can you recommend me some anime studios?",
+            "Do you have any recommendations for anime studios that have a diverse range of genres in their portfolio?",
+            "I'm interested in anime studios that have a strong track record of creating successful original anime. Any suggestions?",
+            "What are some well-established anime studios that have been around for a long time?",
+            "Which anime production companies make good shows?",
+            "Are there any anime production companies known for their visually stunning animation?",
+            "Are there any anime production companies that are particularly popular among international fans?"
+        ],
+        "responses": [
+            "There are many great anime production companies, some of the top ones are: Kyoto Animation, Production I.G., Studio Ghibli, Madhouse, and Bones.",
+            "Sure! Some great anime studios include: Trigger, Shaft, ufotable, and A-1 Pictures.",
+            "If you're looking for quality anime, you can't go wrong with anime production companies like Wit Studio, P.A. Works, Sunrise, or Gainax."
+        ]
+    },
+    {
+        "tag": "manga",
+        "patterns": [
+            "I'm looking for a new manga to read",
+            "What are some classic manga series that have stood the test of time?",
+            "I enjoy manga with complex and thought-provoking storylines. Can you recommend me some titles in that vein?",
+            "List some top mangas.",
+            "Can you suggest some manga that have been adapted into successful anime series?",
+            "Do you have any recommendations for manga with strong female protagonists?",
+            "I'm in the mood for some dark and gritty manga. Any suggestions?",
+            "What are some popular manga?",
+            "Can you suggest some manga titles for beginners?",
+            "Suggest some best mangas ever."
+        ],
+        "responses": [
+            "Sure thing! If you're into action and adventure, you might enjoy Attack on Titan, Naruto, or One Piece. For something more slice-of-life, check out A Silent Voice, Your Lie in April, or Fruits Basket. If you like horror, try Tokyo Ghoul or Uzumaki.",
+            "There are so many great manga out there! Some popular ones include Demon Slayer, My Hero Academia, and Fullmetal Alchemist. For romance, try Kaguya-sama: Love is War or Horimiya. And for sports, check out Haikyu!! or Slam Dunk.",
+            "There's always something new to read! Some recent manga that have been getting a lot of attention include Jujutsu Kaisen, Chainsaw Man, and Spy x Family. For something more classic, try Astro Boy or Dragon Ball."
+        ]
+    },
+    {
+        "tag": "manga_author",
+        "patterns": [
+            "Can you suggest some talented manga authors?",
+            "Any recommendations for manga artists?",
+            "What are some popular manga writers known for their exceptional storytelling?",
+            "I'm interested in reading manga by authors who have a large and dedicated fanbase. Any suggestions?",
+            "Are there any manga authors who have won prestigious awards for their work?",
+            "I'm in the mood for some captivating manga stories. Can you suggest some talented manga authors?",
+            "Do you have any recommendations for manga authors who have a diverse range of genres in their works?",
+            "Who are some of the best manga writers?",
+            "Can you suggest some manga creators who have a unique art style?",
+            "I love manga and I'm interested in discovering new manga authors. Any recommendations?"
+        ],
+        "responses": [
+            "Sure! Some great manga authors include Akiko Higashimura, Naoki Urasawa, and Inio Asano.",
+            "If you're looking for talented manga writers, you might want to check out Rumiko Takahashi, Clamp, or Hirohiko Araki.",
+            "Definitely! You should check out the work of Junji Ito, Yoshihiro Togashi, and Hiromu Arakawa.",
+            "There are so many amazing manga artists out there! Some of my favorites are Masashi Kishimoto, Eiichiro Oda, and Tsugumi Ohba.",
+            "I have a lot of favorite manga authors, but some of the best include Akira Toriyama, Takehiko Inoue, and Katsura Hoshino."
+        ]
+    },
+    {
+        "tag": "anime_movie",
+        "patterns": [
+            "I enjoy anime movies with a blend of action and romance. Any suggestions?",
+            "Do you have any favorite anime movies?",
+            "Suggest some must-watch anime movies.",
+            "I'm looking for a good anime movie",
+            "Can you recommend some anime movies with thought-provoking storytelling?",
+            "What are some classic anime movies worth watching?",
+            "I'm in the mood for a visually stunning anime movie. Any suggestions?",
+            "What are some good anime movies?",
+            "Can you recommend some anime movies?",
+            "What are some highly acclaimed anime movies?"
+        ],
+        "responses": [
+            "Sure thing! If you're in the mood for something heartwarming, try A Silent Voice or Your Name. For a great action movie, check out Akira or Sword of the Stranger. If you want something more emotional, Grave of the Fireflies and Perfect Blue are both great choices.",
+            "Absolutely! Wolf Children and The Girl Who Leapt Through Time are both wonderful slice-of-life movies. For something a little darker, check out Paprika or Ghost in the Shell. And if you're looking for something truly epic, try the movie adaptations of the Attack on Titan series.",
+            "Of course! If you want something with a strong message, try In This Corner of the World or The Anthem of the Heart. If you're looking for something with stunning visuals, Your Name and Weathering with You are both beautiful movies. And for something a little different, check out Mind Game or Redline!"
+        ]
+    },
+    {
+        "tag": "anime_movie_director",
+        "patterns": [
+            "Can you recommend some anime movies directed by famous directors?",
+            "Can you suggest any anime movies directed by well-known filmmakers?",
+            "Which anime movie directors have a reputation for creating exceptional works?",
+            "Who are the visionary directors behind some of the best anime movies?",
+            "I'm interested in the works of specific anime movie directors. Can you suggest some notable ones?",
+            "Do you have any favorite anime movies directed by notable directors?",
+            "Which anime movie directors have a distinct visual style?",
+            "Can you tell me about some influential anime movie directors?",
+            "I want to explore anime movies by renowned directors. Any recommendations?",
+            "Who are some famous anime movie directors?"
+        ],
+        "responses": [
+            "Hayao Miyazaki is one of the most well-known anime movie directors, and his works such as Spirited Away and Princess Mononoke are considered classics.",
+            "Mamoru Hosoda is another great anime movie director, known for his works like Wolf Children and The Girl Who Leapt Through Time.",
+            "Makoto Shinkai is a rising star in the anime movie industry, and his works like Your Name and Weathering with You have gained critical acclaim.",
+            "Isao Takahata, the co-founder of Studio Ghibli, directed several masterpieces such as Grave of the Fireflies and Only Yesterday.",
+            "Katsuhiro Otomo, known for his work on the iconic Akira, is another famous anime movie director to check out."
+        ]
+    },
+    {
+        "tag": "what is a light novel",
+        "patterns": [
+            "Are light novels usually serialized or released as standalone books?",
+            "What type of book is a light novel?",
+            "How do light novels differ from manga and anime?",
+            "Can you recommend some light novels that have been adapted into anime?",
+            "Can you explain what a light novel is?",
+            "I want to know about light novels",
+            "How would you describe the concept of light novels?",
+            "What are some popular light novel series?",
+            "Do light novels have illustrations?",
+            "What's the difference between a light novel and a regular novel?"
+        ],
+        "responses": [
+            "A light novel is a style of Japanese novel that targets young adult readers. They are usually short and fast-paced, with illustrations scattered throughout the book. Light novels cover a wide range of genres, from fantasy and science fiction to romance and comedy. They are often adapted into anime or manga series. The term 'light novel' refers to the simple writing style and easy-to-read format, as well as the target audience, which is often younger readers. Light novels are popular in Japan and have gained a growing following in other parts of the world in recent years."
+        ]
+    },
+    {
+        "tag": "writing style of light novel",
+        "patterns": [
+            "What role does world-building play in light novels?",
+            "Is there a specific structure or chapter length followed in light novels?",
+            "How do light novels create tension and suspense?",
+            "Are light novels written in a specific format?",
+            "Are light novels known for their use of humor?",
+            "Are light novels known for their fast-paced storytelling?",
+            "What is the typical writing style of light novels?",
+            "How do illustrations contribute to the overall writing style of light novels?",
+            "Do light novels use descriptive language or focus more on dialogue?",
+            "How are light novels written?"
+        ],
+        "responses": [
+            "The writing style of a light novel is typically simple and easy to read. They often use a first-person or limited third-person perspective, and the prose is generally straightforward and dialogue-heavy. Light novels also tend to have a faster pace than traditional novels, with shorter chapters and cliffhangers at the end of each one. The stories are often accompanied by illustrations, which are usually done by a separate artist. The illustrations are an important part of the light novel format and help to set the tone and style of the story."
+        ]
+    },
+    {
+        "tag": "light_novels",
+        "patterns": [
+            "Are light novels more plot-driven or character-driven?",
+            "What techniques do light novel authors use to engage readers?",
+            "Are light novels known for their fast-paced storytelling?",
+            "Do light novels use descriptive language or focus more on dialogue?",
+            "Are light novels known for their use of tropes and clich\u0102\u00a9s?",
+            "How do light novels create tension and suspense?",
+            "What is the typical writing style of light novels?",
+            "Is there a specific structure or chapter length followed in light novels?",
+            "Are light novels written in a specific format?",
+            "What are some common writing conventions in light novels?"
+        ],
+        "responses": [
+            "Absolutely! If you're into fantasy, you might enjoy Sword Art Online, Re:Zero, or The Rising of the Shield Hero",
+            "If you're looking for something with a bit of romance, try Spice and Wolf, My Youth Romantic Comedy Is Wrong, As I Expected, or Toradora!",
+            "For a more action-packed read, check out That Time I Got Reincarnated as a Slime, Overlord, or The Devil is a Part-Timer!",
+            "Sure thing! How about starting with something like Konosuba: God's Blessing on This Wonderful World!, The Melancholy of Haruhi Suzumiya, or No Game No Life?",
+            "There are so many great light novels out there! Some other popular ones include A Certain Magical Index, The Irregular at Magic High School, and DanMachi: Is It Wrong to Try to Pick Up Girls in a Dungeon?"
+        ]
+    },
+    {
+        "tag": "light_novel_genres",
+        "patterns": [
+            "Can you suggest light novels with a focus on slice-of-life stories?",
+            "Are there any light novels with a sports theme?",
+            "Are there any light novels that blend multiple genres together?",
+            "I'm looking for light novels in the sci-fi genre. Any suggestions?",
+            "Can you recommend light novels in the supernatural genre?",
+            "Are there any light novels with a cyberpunk setting?",
+            "What are some light novel genres besides fantasy and romance?",
+            "I'm interested in light novels with a school or academy setting. Any suggestions?",
+            "What light novel genres appeal to a mature audience?",
+            "Are there any light novels that explore political intrigue?"
+        ],
+        "responses": [
+            "There are many popular light novel genres! Some of the most common ones include isekai (transported to another world), fantasy, and romance.",
+            "Sure thing! You might enjoy light novels in genres like mystery, sci-fi, or action.",
+            "Of course! Check out light novels in genres like horror, comedy, or adventure for some variety."
+        ]
+    },
+    {
+        "tag": "isekai",
+        "patterns": [
+            "Can you recommend Isekai light novels with complex and well-developed characters?",
+            "I'm in search of an engaging Isekai light novel to read. Any recommendations?",
+            "Are there any Isekai light novels with a strong emphasis on world-building?",
+            "What are some well-known Isekai light novels that you could recommend?",
+            "What are some recent Isekai light novels that have gained popularity?",
+            "Do you know any Isekai light novels that have been adapted into anime?",
+            "I'm looking for an Isekai light novel to read",
+            "I'm interested in Isekai light novels with a unique twist. Any suggestions?",
+            "Can you recommend Isekai light novels that explore philosophical themes?",
+            "Can you recommend a good Isekai novel?"
+        ],
+        "responses": [
+            "For popular Isekai light novels, you can check out Sword Art Online, Re:Zero - Starting Life in Another World, and Overlord",
+            "If you're looking for a good Isekai light novel, try That Time I Got Reincarnated as a Slime, So I'm a Spider, So What?, or The Rising of the Shield Hero",
+            "Sure thing! Other great Isekai light novels include Konosuba: God's Blessing on This Wonderful World!, No Game No Life, and Death March to the Parallel World Rhapsody"
+        ]
+    },
+    {
+        "tag": "fantasy",
+        "patterns": [
+            "List some top fantasy light novels.",
+            "What are some unique features of fantasy light novels compared to other genres?",
+            "What are some good fantasy light novels?",
+            "What are some fantasy light novels that have strong female protagonists?",
+            "Do you have any recommendations for a beginner to the fantasy light novel genre?",
+            "Suggest some best fantasy light novels ever.",
+            "I'm in the mood for a fantasy light novel",
+            "I want to read fantasy light novels.",
+            "Are there any fantasy light novels with epic world-building?",
+            "Can you list the top fantasy light novels?"
+        ],
+        "responses": [
+            "For some great fantasy light novels, check out The Lord of the Rings, A Song of Ice and Fire, and The Kingkiller Chronicle",
+            "If you're in the mood for fantasy, try Mistborn, The Wheel of Time, or The Stormlight Archive",
+            "Sure thing! Other great fantasy light novels include The Belgariad, The Malazan Book of the Fallen, and The First Law Trilogy"
+        ]
+    },
+    {
+        "tag": "slice_of_life",
+        "patterns": [
+            "List some top slice of life animes.",
+            "I'm in the mood for a Slice of Life light novel",
+            "Are there any Slice of Life light novels that delve into the challenges and joys of family life?",
+            "I'm interested in Slice of Life light novels with a cozy and comforting atmosphere. Any suggestions?",
+            "Can you recommend Slice of Life light novels with a strong sense of community and camaraderie?",
+            "What are some recent Slice of Life light novels that have gained popularity?",
+            "Looking for a good Slice of Life read, any suggestions?",
+            "Do you know any Slice of Life light novels with a touch of romance?",
+            "Can you recommend a Slice of Life novel?",
+            "What are some good Slice of Life light novels?"
+        ],
+        "responses": [
+            "For some great Slice of Life light novels, check out My Youth Romantic Comedy Is Wrong, As I Expected, K-On!, and The Pet Girl of Sakurasou",
+            "If you're in the mood for Slice of Life, try Barakamon, Non Non Biyori, or Hyouka",
+            "Sure thing! Other great Slice of Life light novels include A Silent Voice, Bunny Drop, and Aria"
+        ]
+    },
+    {
+        "tag": "mystery",
+        "patterns": [
+            "Are there any mystery light novels with a focus on courtroom drama?",
+            "Do you know any mystery light novels with a historical setting?",
+            "Do you know any good mystery novels?",
+            "What are some mystery light novels that have a supernatural or paranormal theme?",
+            "What are some good mystery light novels?",
+            "Can you recommend mystery light novels with a twist ending?",
+            "Can you recommend mystery light novels with a psychological thriller element?",
+            "What are some mystery light novels that have been adapted into successful TV shows or movies?",
+            "Can you recommend a mystery novel?",
+            "What are some mystery light novels with a noir or hard-boiled detective atmosphere?"
+        ],
+        "responses": [
+            "For some great mystery light novels, check out The Girl with the Dragon Tattoo, The Da Vinci Code, and The Adventures of Sherlock Holmes",
+            "If you're in the mood for mystery, try The Cuckoo's Calling, The Big Sleep, or The Hound of the Baskervilles",
+            "Sure thing! Other great mystery light novels include The Name of the Rose, The Maltese Falcon, and The Shadow of the Wind"
+        ]
+    },
+    {
+        "tag": "romcom_lightnovel",
+        "patterns": [
+            "Can you recommend a RomCom light novel?",
+            "What are some good RomCom light novels?",
+            "Looking for a light novel with a romantic comedy theme",
+            "Can you suggest RomCom light novels with a focus on character development?",
+            "Do you know any RomCom light novels that explore different forms of love and relationships?",
+            "I'm looking for RomCom light novels with a slow-burn romance. Any suggestions?",
+            "Are there any RomCom light novels with a fantasy or supernatural element?",
+            "What are some RomCom light novels with a mistaken identity or fake relationship trope?",
+            "Are there any RomCom light novels with a high school setting?",
+            "I'm in the mood for a RomCom light novel"
+        ],
+        "responses": [
+            "Sure, how about giving My Youth Romantic Comedy Is Wrong, As I Expected, or Toradora! a try?",
+            "Definitely! You might enjoy The Pet Girl of Sakurasou, The Quintessential Quintuplets, or Love, Chunibyo & Other Delusions",
+            "Absolutely! Consider checking out The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat, or The 100 Girlfriends Who Really, Really, Really, Really, Really Love You.",
+            "If you like RomCom light novels, you may enjoy Bottom-Tier Character Tomozaki or Hensuki: Are you willing to fall in love with a pervert, as long as she's a cutie?",
+            "No problem! Some RomCom light novels you might enjoy are A Sister's All You Need, Gamers!, or The Hentai Prince and the Stony Cat"
+        ]
+    },
+    {
+        "tag": "light_novel_authors",
+        "patterns": [
+            "Can you recommend light novel authors who excel in world-building?",
+            "Which light novel authors should I check out?",
+            "Can you suggest light novel authors who have successfully crossed over to other media, such as anime or manga?",
+            "Who are some of the best light novel authors out there?",
+            "Do you know any light novel authors who are known for their complex and multi-dimensional characters?",
+            "Who are some of the top-notch light novel authors in the industry?",
+            "I'm looking for light novel authors to follow, any suggestions?",
+            "Do you know any light novel authors who are known for their prolific output?",
+            "Can you recommend some good light novel authors?",
+            "Who are the highly regarded light novel authors?"
+        ],
+        "responses": [
+            "There are many great light novel authors out there! Some of the most popular ones include Reki Kawahara, Kugane Maruyama, and Kazuma Kamachi.",
+            "Sure thing! Some of the most popular light novel authors are Nisio Isin, Ryohgo Narita, and Yuu Kamiya.",
+            "Of course! You might enjoy light novels by Aneko Yusagi, Riku Misora, or Fuse."
+        ]
+    },
+    {
+        "tag": "light_novel_illustrators",
+        "patterns": [
+            "Can you recommend light novel illustrators who have worked on light novels with romantic or slice-of-life themes?",
+            "Who are the most famous illustrators for light novels?",
+            "Who are some great light novel illustrators?",
+            "Can you suggest light novel illustrators who have a large and dedicated fanbase?",
+            "I'm curious about light novel illustrators worth checking out. Any recommendations?",
+            "Can you suggest light novel illustrators who have a talent for capturing action scenes?",
+            "Are there any light novel illustrators who are particularly skilled at drawing fantasy or supernatural elements?",
+            "Can you recommend some light novel illustrators?",
+            "What are some light novel illustrators who have a knack for creating visually stunning cover art?",
+            "Do you know any light novel illustrators who have won awards for their artwork?"
+        ],
+        "responses": [
+            "Definitely! Some great light novel illustrators are Kana Ishida, abec, and Hiro Kanzaki!",
+            "If you're interested in light novel illustrators, you might enjoy the works of Suzuhito Yasuda, Kantoku, or Fumio.",
+            "Sure thing! Check out the illustrations of Shigenori Soejima, Noizi Ito, or Shiromizakana for some great light novel artwork."
+        ]
     }
-    ]}
+]}
